@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.password-box {
+    position: relative;
+    background-color: #f7fafc;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#password {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #4a5568;
+    background: transparent;
+    outline: none;
+}
+
+#copy {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#copy .tooltip {
+    position: absolute;
+    background-color: #2d3748;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    display: none;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.setting label {
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+.setting input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 2px solid #e2e8f0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.setting input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #667eea;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.generate-btn:hover {
+    transform: translateY(-1px);
+}
+
+.generate-btn:active {
+    transform: translateY(1px);
+}
+
+.designer-credit {
+    text-align: center;
+    margin-top: 20px;
+    color: #718096;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    #password {
+        font-size: 1rem;
+    }
+    
+    .designer-credit {
+        font-size: 0.8rem;
+    }
+} 
